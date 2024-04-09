@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js"></script>
+ 
+    
+</head>
+<body>
+    <h1>Dashboard</h1>
+
+    <div class="link-list">
+        <div class="link-item">
+            <a href="#" onclick="openModal('index.json')">home</a>
+            <button onclick="openModal('index.json')">Edit</button>
+        </div>
+        <div class="link-item">
+            <a href="#" onclick="openModal('index2.json')">sri lankan wildlife</a>
+            <button onclick="openModal('index2.json')">Edit</button>
+        </div>
+        <div class="link-item">
+            <a href="#" onclick="openModal('index3.json')">willpattu national park</a>
+            <button onclick="openModal('index3.json')">Edit</button>
+        </div>
+        <div class="link-item">
+            <a href="#" onclick="openModal('index4.json')">department  of  Wildlife conservation</a>
+            <button onclick="openModal('index4.json')">Edit</button>
+        </div>
+        <div class="link-item">
+            <a href="#" onclick="openModal('index5.json')">yala national park</a>
+            <button  value="index5" onclick="openModal('index5.json')">Edit</button>
+        </div>
+        <div class="link-item">
+            <a href="#" onclick="openModal('index6.json')">sri lankan lepord</a>
+            <button onclick="openModal('index6.json')">Edit</button>
+        </div>
+        <div class="link-item">
+            <a href="#" onclick="openModal('index7.json')">animals in sri lanka</a>
+            <button onclick="openModal('index7.json')">Edit </button>
+        </div>
+      
+    </div><br><br><br</bra>
+
+    <div id="subscribersList">
+    
+    </div>
+    <button onclick="location.href='index.html'">back</button>
+
+  
+
+
+    <div id="jsonEditorModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>JSON Editor</h2>
+            <textarea id="jsonEditor" style="width: 100%; height: 200px;"></textarea>
+            <br>
+            <button onclick="saveJSON(value)">Save</button>
+        </div>
+    </div>
+</body>
+</html>

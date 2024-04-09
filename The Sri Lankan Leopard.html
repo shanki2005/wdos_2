@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head Sri Lankan Leopard>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sri Lankan Leopard</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="Leopard.json" defer></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <a href="index.html"><img src="images/sltda_logo.png" alt=""></a>
+                <a href="index.html">Home</a>
+                <a href="Wildlife.html">Wildlife</a>
+                <a href="Department of Wildlife Conservation.html">Department of Wildlife Conservation</a>
+                <a href="The Sri Lankan Leopard.html">The Sri Lankan Leopard</a>
+                <a href="Animals in Sri Lanka.html">Animals in Sri Lanka</a>
+                <a href="login.html">Login</a>
+        
+                </div>
+                
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="homeimage">
+        <img src="images/leo homeimage.jpg" alt="">
+        <div class="homeimagetext">
+            <br>
+            <br><br>
+            <br>
+            <br>
+            <h1>Elusive Elegance: Sri Lankan Leopards</h1>
+            <p>"In the heart of Sri Lanka's untamed landscapes, the enigmatic Sri Lankan leopard prowls with silent grace, Unravel the enigma of these vanishing shadows and discover the urgent need for conservation efforts to secure their place in Sri Lanka's untamed legacy."</p>
+            <button class="homeimagebutton" onclick="scrollTohabitatloss()">LEARN MORE</button>
+        </div>
+        <h3>Sanctuaries Frequented by the Sri Lankan Leopard </h3>
+    </div>
+
+    <!-- Gallery Section -->
+<div class="gallery">
+ 
+    <div class="gallery-item">
+        <img src="images/leo yala.jpg" alt="">
+        <h3> Yala National Park</h3>
+        <p>Yala, located in the southeast, is a renowned haven for Sri Lankan leopards. Its diverse landscape, including dense forests and open grasslands, provides an ideal habitat for these elusive creatures.</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/leo udawalawe.jpg" alt="">
+        <h3>Udawalawe National Park:</h3>
+        <p>Located in the south-central part of Sri Lanka, Udawalawe National Park is recognized for its vibrant biodiversity, including a significant population of Sri Lankan leopards. The park's extensive grasslands and the Udawalawe Reservoir create an ideal environment for leopard sightings.
+        </p>
+    </div>
+
+  
+    <div class="gallery-item">
+        <img src="images/leo wilpattu.jpg" alt="">
+        <h3>Wilpattu National Park</h3>
+        <p> Wilpattu, the largest national park, is situated in the northwest and is another hotspot for leopard sightings. Its unique ecosystems, comprising lakes and scrublands, offer a distinctive setting for leopard encounters.</p>
+    </div>
+</div>
+
+
+
+
+
+
+</div>
+
+<div class="info-section" id="habitatloss">
+    <div class="text-box">
+        <h1>Habitat Loss</h1>
+        <p>The encroachment of human settlements and development projects contributes to the loss of the leopard's natural habitat. This threat leads to fragmented habitats, limiting the leopard's range.</p>
+        <ul>
+            <li>Reduced territory for leopards, increased human-leopard conflicts.</li>
+            <li>Conservation Mechanisms: Protected area expansion, reforestation initiatives.</li>
+        </ul>
+        <p><a href="https://www.wwct.org/the-leopard-project">Project Impetus: The conservation of the Sri Lankan leopard in its natural habitat.</a></p>
+    </div>
+    <div class="image-box">
+        <img src="images/habitat loss.jpg" alt="">
+    </div>
+
+</div>
+
+
+
+</div>
+
+<div class="info-section" >
+    <div class="text-box">
+        <h1>Illegal Wildlife Trade</h1>
+        <p> The illegal wildlife trade poses a severe threat to leopards, with their skins and body parts sought after in the black market. Poaching activities jeopardize the leopard population.</p>
+
+        <ul>
+            <li>Decline in leopard numbers, disruption of the ecosystem.</li>
+            <li>Conservation Mechanisms: Strengthening law enforcement, community engagement against poaching.</li>
+        </ul>
+       <p><a href="https://www.traffic.org/what-we-do/species/leopards/">poached for their skins, bones, teeth, claws, and skins</a></p>
+    </div>
+    <div class="image-box">
+        <img src="images/illegal.jpg" alt="">
+    </div>
+
+</div>
+
+<footer>
+    <div class="footer">
+        <div class="footer-box1">
+            <img src="images/sltda_logo.png" alt="">
+            <form id="subscribeForm">
+                <label for="email">Subscribe to our Newsletter:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-box2">
+            <div class="footer-nav">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="Wildlife.html">Wildlife</a>
+                <a href="Department of Wildlife Conservation.html">SLWCD</a>
+                <a href="The Sri Lankan Leopard.html">The Sri Lankan Leopard</a>
+                <a href="Animals in Sri Lanka.html">Animals in Sri Lanka</a>
+                <div class="copyright">
+                    <p>&copy; SLTDA 2024. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-box3">
+            <div class="footer-info">
+                <h4>Contact Info.</h4>
+                <a href="https://www.google.com/maps/dir//No.80,Galleroad,Colombo03">No. 80, Galle road, Colombo 03</a>
+                <a href="tel:+94 112 426800">Call Us</a>
+                <a href="mailto:info@srilanka.travel">Email Us</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
+
+
+<script>
+    function scrollTohabitatloss() {
+    const section = document.getElementById('habitatloss');
+    const start = window.pageYOffset;
+    const end = section.offsetTop;
+    const distance = end - start;
+    const duration = 1500;
+    let startTime;
+
+    function scrollAnimation(currentTime) {
+        if (!startTime) startTime = currentTime;
+        const progress = currentTime - startTime;
+        const percentage = Math.min(progress / duration, 1);
+        window.scrollTo(0, start + distance * percentage);
+
+        if (progress < duration) {
+            requestAnimationFrame(scrollAnimation);
+        }
+    }
+
+    requestAnimationFrame(scrollAnimation);
+}
+
+    </script>
+
+</body>
+
+</html>

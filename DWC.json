@@ -1,0 +1,37 @@
+{
+    "mainConservation": {
+      "title": "The Department of Wildlife Conservation, A Sustainable way forward",
+      "description": "The Sri Lankan Department of Wildlife Conservation preserves and sustains the nation's biodiversity. Committed to safeguarding flora and fauna, it enforces laws, collaborates for conservation, and promotes awareness.",
+      "buttons": [
+        {
+          "label": "Learn More",
+          "link": "https://www.dwc.gov.lk/si",
+          "target": "_blank"
+        },
+        {
+          "label": "Location📌",
+          "link": "https://www.google.com/maps/dir//811A,Jayanthipura,Battaramulla Sri Lanka",
+          "target": "_blank"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "title": "Minneriya National Park",
+        "image": "images/minneriya.jpg",
+        "description": "A picturesque park known for the gathering of elephants during the famous Minneriya Elephant Gathering."
+      },
+      {
+        "title": "Wilpattu National Park",
+        "image": "images/wilpattu.jpg",
+        "link": "wilpattu.html",
+        "description": "Wilpattu, the largest national park in Sri Lanka, is renowned for its natural lakes and diverse fauna."
+      },
+      {
+        "title": "Horton Plains National Park",
+        "image": "images/horton.jpg",
+        "description": "Discover the scenic beauty and unique flora and fauna of Horton Plains, a UNESCO World Heritage Site."
+      }
+    ]
+  }
+  

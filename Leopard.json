@@ -1,0 +1,21 @@
+{
+    "habitatLoss": {
+      "title": "Habitat Loss",
+      "description": "The encroachment of human settlements and development projects contributes to the loss of the leopard's natural habitat. This threat leads to fragmented habitats, limiting the leopard's range.",
+      "points": [
+        "Reduced territory for leopards, increased human-leopard conflicts.",
+        "Conservation Mechanisms: Protected area expansion, reforestation initiatives."
+      ],
+      "link": "https://www.wwct.org/the-leopard-project"
+    },
+    "illegalWildlifeTrade": {
+      "title": "Illegal Wildlife Trade",
+      "description": "The illegal wildlife trade poses a severe threat to leopards, with their skins and body parts sought after in the black market. Poaching activities jeopardize the leopard population.",
+      "points": [
+        "Decline in leopard numbers, disruption of the ecosystem.",
+        "Conservation Mechanisms: Strengthening law enforcement, community engagement against poaching."
+      ],
+      "link": "https://www.traffic.org/what-we-do/species/leopards/"
+    }
+  }
+  

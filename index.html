@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head title="Home">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="index.json" defer></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <a href="index.html"><img src="images/sltda_logo.png" alt=""></a>
+                <a href="index.html">Home</a>
+                <a href="Wildlife.html">Wildlife</a>
+                <a href="Department of Wildlife Conservation.html">Department of Wildlife Conservation</a>
+                <a href="The Sri Lankan Leopard.html">The Sri Lankan Leopard</a>
+                <a href="Animals in Sri Lanka.html">Animals in Sri Lanka</a>
+         <a href="login.html">Login</a>
+                </div>
+                
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="homeimage">
+        <img src="images/Home image.jpg" alt="">
+        <div class="homeimagetext">
+            <h1>Welcome</h1>
+            <p>"Dive into Sri Lanka's untamed beauty! Explore diverse wildlife, conservation stories, and breathtaking sanctuaries. Welcome to the extraordinary – where every step is a leap into nature's grand spectacle!"</p>
+            <button class="homeimagebutton" onclick="scrollToFloraAndFauna()">LEARN MORE</button>
+        </div>
+    </div>
+
+      <div class="info-section" id="Marinewildlife">
+        <div class="image-box">
+            <img src="images/Marine.jpg" alt="">
+        </div>
+        <div class="text-box">
+            <h1>Marine Wildlife</h1>
+            <p>Sri Lanka's coastal waters reveal a captivating underwater world, teeming with colorful coral gardens and a variety of marine creatures, making it a haven for underwater enthusiasts. </p>
+            <p>The marine wonders of Sri Lanka extend from bustling coral reefs to elusive sea creatures like dugongs. Efforts in marine conservation highlight the nation's commitment to preserving this aquatic treasure..</p>
+            <ul>
+                <li>Vibrant Coral Gardens: Explore Sri Lanka's underwater beauty in thriving coral ecosystems.</li>
+                <li>Enigmatic Dugongs: Encounter rare marine life, including the elusive dugongs.</li>
+            </ul>
+        </div>
+       
+    </div> 
+
+    <div class="info-section" >
+        <div class="text-box">
+            <h1>Flora and Fauna</h1>
+            <p>Nestled in the Indian Ocean, Sri Lanka is a biodiversity hotspot, showcasing a remarkable range of plant and animal life. </p>
+            <p>From lush rainforests housing endemic orchids and medicinal plants to the iconic Sri Lankan Elephant and Leopard, the island is a haven for nature lovers.</p>
+            <ol>
+                <li>Unique flora and fauna exclusive to Sri Lanka, including rare orchids to the giant squirrel.</li>
+                <li>Explore the rich biodiversity in national parks like Yala and Wilpattu, witnessing diverse species in their natural habitats.</li>
+            </ol>
+        </div>
+        <div class="image-box">
+            <img src="images/Fauna.jpg" alt="">
+        </div>
+  
+    </div>
+
+    <div class="info-section">
+        <div class="image-box">
+            <img src="images/Avian.jpg" alt="">
+        </div>
+        <div class="text-box">
+            <h1>Avian Life</h1>
+            <p>Sri Lanka's vibrant avian life adds a symphony of colors and melodies to its diverse landscapes. From bustling urban areas to serene national parks, the island is home to a rich variety of bird species, making it a haven for birdwatching enthusiasts.</p>
+            <p>The extensive wetlands, lush forests, and coastal regions host an array of feathered residents, contributing to the country's status as a birdwatcher's paradise.</p>
+            <ul>
+                <li>Endemic Wonders: Explore Sri Lanka's unique avian biodiversity, featuring numerous endemic species found nowhere else on Earth.</li>
+                <li>Protected Habitats: Efforts in conservation ensure the preservation of crucial bird habitats, contributing to the sustainability of Sri Lanka's avian ecosystems.</li>
+            </ul>
+        </div>
+</div>
+    <footer>
+        <div class="footer">
+            <div class="footer-box1">
+                <img src="images/sltda_logo.png" alt="">
+                <form id="subscribeForm">
+                    <label for="email">Subscribe to our Newsletter:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-box2">
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    
+                    <a href="index.html">Home</a>
+                    <a href="Wildlife.html">Wildlife</a>
+                    <a href="Department of Wildlife Conservation.html">SLWCD</a>
+                    <a href="The Sri Lankan Leopard.html">The Sri Lankan Leopard</a>
+                    <a href="Animals in Sri Lanka.html">Animals in Sri Lanka</a>
+                    <div class="copyright">
+                        <p>&copy; SLTDA 2024. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-box3">
+                <div class="footer-info">
+                    <h4>Contact Info.</h4>
+                    <a href="https://www.google.com/maps/dir//No.80,Galleroad,Colombo03">No. 80, Galle road, Colombo 03</a>
+                    <a href="tel:+94 112 426800">Call Us</a>
+                    <a href="mailto:info@srilanka.travel">Email Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   <script>
+    function scrollToFloraAndFauna() {
+    const section = document.getElementById('Marinewildlife');
+    const start = window.pageYOffset;
+    const end = section.offsetTop;
+    const distance = end - start;
+    const duration =1500;
+    let startTime;
+
+    function scrollAnimation(currentTime) {
+        if (!startTime) startTime = currentTime;
+        const progress = currentTime - startTime;
+        const percentage = Math.min(progress / duration, 1);
+        window.scrollTo(0, start + distance * percentage);
+
+        if (progress < duration) {
+            requestAnimationFrame(scrollAnimation);
+        }
+    }
+
+    requestAnimationFrame(scrollAnimation);
+}
+
+    </script>
+
+
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>

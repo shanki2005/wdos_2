@@ -1,0 +1,33 @@
+
+
+
+
+{
+  "marineWildlife": {
+    "title": "Marine Wildlife",
+    "image": "images/Marine.jpg",
+    "description": "Sri Lanka's coastal waters reveal a captivating underwater world, teeming with colorful coral gardens and a variety of marine creatures, making it a haven for underwater enthusiasts.",
+    "points": [
+      "Vibrant Coral Gardens: Explore Sri Lanka's underwater beauty in thriving coral ecosystems.",
+      "Enigmatic Dugongs: Encounter rare marine life, including the elusive dugongs."
+    ]
+  },
+  "floraAndFauna": {
+    "title": "Flora and Fauna",
+    "image": "images/Fauna.jpg",
+    "description": "Nestled in the Indian Ocean, Sri Lanka is a biodiversity hotspot, showcasing a remarkable range of plant and animal life.",
+    "points": [
+      "Unique flora and fauna exclusive to Sri Lanka, including rare orchids to the giant squirrel.",
+      "Explore the rich biodiversity in national parks like Yala and Wilpattu, witnessing diverse species in their natural habitats."
+    ]
+  },
+  "avianLife": {
+    "title": "Avian Life",
+    "image": "images/Avian.jpg",
+    "description": "Sri Lanka's vibrant avian life adds a symphony of colors and melodies to its diverse landscapes.",
+    "points": [
+      "Endemic Wonders: Explore Sri Lanka's unique avian biodiversity, featuring numerous endemic species found nowhere else on Earth.",
+      "Protected Habitats: Efforts in conservation ensure the preservation of crucial bird habitats, contributing to the sustainability of Sri Lanka's avian ecosystems."
+    ]
+  }
+}
